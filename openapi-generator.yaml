@@ -1,0 +1,9 @@
+generatorName: php
+gitHost: github.com
+gitUserId: smspool
+gitRepoId: smspool-php
+additionalProperties:
+  invokerPackage: SMSPool
+  composerPackageName: smspool/smspool-php
+  artifactVersion: 0.1.0
+  licenseName: MIT

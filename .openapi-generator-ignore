@@ -1,0 +1,12 @@
+# Hand-written files: the generator must leave these alone.
+/README.md
+LICENSE
+.github/**
+scripts/**
+smoke/**
+
+# Generator extras this repo does not use.
+git_push.sh
+test/**
+.travis.yml
+.gitlab-ci.yml
