@@ -1,22 +1,21 @@
 {
     "name": "smspool/smspool-php",
-    "version": "0.1.0",
-    "description": "Every endpoint accepts its parameters as form fields (POST) or query parameters (GET).  Authenticate with your API key from https://www.smspool.net/my/settings, either as a bearer token (`Authorization: Bearer <key>`) or as a `key` parameter.",
+    "description": "Official PHP client for the SMSPool API: SMS verification numbers, rentals, pre-orders and eSIMs.",
     "keywords": [
-        "openapitools",
-        "openapi-generator",
-        "openapi",
-        "php",
-        "sdk",
-        "rest",
-        "api"
+        "smspool",
+        "sms",
+        "sms-verification",
+        "otp",
+        "phone-verification",
+        "api",
+        "sdk"
     ],
-    "homepage": "https://openapi-generator.tech",
+    "homepage": "https://api.smspool.net/docs",
     "license": "MIT",
     "authors": [
         {
-            "name": "OpenAPI",
-            "homepage": "https://openapi-generator.tech"
+            "name": "SMSPool",
+            "homepage": "https://www.smspool.net"
         }
     ],
     "require": {
@@ -32,9 +31,17 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "SMSPool\\" : "lib/" }
+        "psr-4": {
+            "SMSPool\\": "lib/"
+        }
     },
     "autoload-dev": {
-        "psr-4": { "SMSPool\\Test\\" : "test/" }
+        "psr-4": {
+            "SMSPool\\Test\\": "test/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/smspool/smspool-php/issues",
+        "docs": "https://api.smspool.net/docs"
     }
 }
