@@ -13,6 +13,7 @@ All URIs are relative to https://api.smspool.net, except if the operation define
 | [**requestHistory()**](SMSApi.md#requestHistory) | **POST** /request/history | Order History |
 | [**smsActivate()**](SMSApi.md#smsActivate) | **POST** /sms/activate | Activate SMS |
 | [**smsAllStock()**](SMSApi.md#smsAllStock) | **POST** /sms/all_stock | One-time stock for all services |
+| [**smsArchive()**](SMSApi.md#smsArchive) | **POST** /sms/archive | Archive |
 | [**smsCancel()**](SMSApi.md#smsCancel) | **POST** /sms/cancel | Cancel SMS |
 | [**smsCancelAll()**](SMSApi.md#smsCancelAll) | **POST** /sms/cancel_all | Cancel All SMS |
 | [**smsCheck()**](SMSApi.md#smsCheck) | **POST** /sms/check | Check SMS |
@@ -453,6 +454,66 @@ try {
 ### Authorization
 
 No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `application/x-www-form-urlencoded`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `smsArchive()`
+
+```php
+smsArchive($orderid): mixed
+```
+
+Archive
+
+_Not documented yet: the parameters below come straight from the code._
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure Bearer authorization: bearerAuth
+$config = SMSPool\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new SMSPool\Api\SMSApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$orderid = 'orderid_example'; // string
+
+try {
+    $result = $apiInstance->smsArchive($orderid);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling SMSApi->smsArchive: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **orderid** | **string**|  | |
+
+### Return type
+
+**mixed**
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
 
 ### HTTP request headers
 

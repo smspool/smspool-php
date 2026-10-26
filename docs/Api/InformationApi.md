@@ -10,6 +10,7 @@ All URIs are relative to https://api.smspool.net, except if the operation define
 | [**poolRetrieveAll()**](InformationApi.md#poolRetrieveAll) | **POST** /pool/retrieve_all | Pool list |
 | [**poolRetrieveValid()**](InformationApi.md#poolRetrieveValid) | **POST** /pool/retrieve_valid | Suggested Pools |
 | [**requestBalance()**](InformationApi.md#requestBalance) | **POST** /request/balance | Balance |
+| [**requestHistorySearch()**](InformationApi.md#requestHistorySearch) | **POST** /request/history_search | History search |
 | [**requestSuccessRate()**](InformationApi.md#requestSuccessRate) | **POST** /request/success_rate | Retrieve country success rates per service |
 | [**requestSuggestedCountries()**](InformationApi.md#requestSuggestedCountries) | **POST** /request/suggested_countries | Suggested Countries |
 | [**serviceRetrieveAll()**](InformationApi.md#serviceRetrieveAll) | **GET** /service/retrieve_all | Service list |
@@ -237,6 +238,70 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `requestHistorySearch()`
+
+```php
+requestHistorySearch($search, $cursor, $limit): mixed
+```
+
+History search
+
+_Not documented yet: the parameters below come straight from the code._
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure Bearer authorization: bearerAuth
+$config = SMSPool\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new SMSPool\Api\InformationApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$search = 'search_example'; // string
+$cursor = 'cursor_example'; // string
+$limit = 56; // int
+
+try {
+    $result = $apiInstance->requestHistorySearch($search, $cursor, $limit);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling InformationApi->requestHistorySearch: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **search** | **string**|  | |
+| **cursor** | **string**|  | [optional] |
+| **limit** | **int**|  | [optional] |
+
+### Return type
+
+**mixed**
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: `application/x-www-form-urlencoded`
 - **Accept**: `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
