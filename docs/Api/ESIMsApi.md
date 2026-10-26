@@ -1,6 +1,6 @@
 # SMSPool\ESIMsApi
 
-Introduction to the eSIM API usage. Here&#39;s a step-to-step process on how to streamline your eSIM purchases:  1. Retrieve the country list from **View eSIM countries**      2. Retrieve the plans per country using the **countryCode**      3. Create your first purchase using the **Purchase eSIM**      4. Retrieve the **transactionId** from **Purchase eSIM**      5. Use the **View eSIM profile** endpoint to retrieve the QR code, or the access URL in order to install the eSIM or view remaining data.
+&gt; **eSIMs have moved to [SIMJuno](https://simjuno.com).** Buy new data-only eSIMs on SIMJuno. The endpoints below remain for eSIMs bought on SMSPool.  Introduction to the eSIM API usage. Here&#39;s a step-to-step process on how to streamline your eSIM purchases:  1. Retrieve the country list from **View eSIM countries**      2. Retrieve the plans per country using the **countryCode**      3. Create your first purchase using the **Purchase eSIM**      4. Retrieve the **transactionId** from **Purchase eSIM**      5. Use the **View eSIM profile** endpoint to retrieve the QR code, or the access URL in order to install the eSIM or view remaining data.
 
 All URIs are relative to https://api.smspool.net, except if the operation defines another base path.
 
