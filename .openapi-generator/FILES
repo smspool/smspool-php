@@ -3,7 +3,6 @@
 composer.json
 docs/Api/BusinessApi.md
 docs/Api/CarrierApi.md
-docs/Api/ESIMsApi.md
 docs/Api/InformationApi.md
 docs/Api/PreordersApi.md
 docs/Api/PricingApi.md
@@ -12,7 +11,6 @@ docs/Api/SMSApi.md
 docs/Api/VoucherApi.md
 lib/Api/BusinessApi.php
 lib/Api/CarrierApi.php
-lib/Api/ESIMsApi.php
 lib/Api/InformationApi.php
 lib/Api/PreordersApi.php
 lib/Api/PricingApi.php
